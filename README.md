@@ -8,7 +8,7 @@ This document is a WIP.
 
 * functions and methods
 * variables and constants
-* types including primitives, structs and interfaces
+* types including primitives, enums, structs and interfaces
 * compiler directives
 
 All concepts have an identifier (or `id`), as well as types. To define any new concept, we should:
@@ -48,6 +48,34 @@ Rumi includes the following primitive types:
 * `string`, pointers to `u8`, WIP
 * `arrays`, pointers to specific type OR fixed size arrays, WIP
 * function pointers
+
+# enum
+
+An `enum` is defined as:
+
+``` rumi
+enm : enum {
+  v1, v2, // note the trailing comma
+}
+```
+
+optionally default values could be provided:
+
+``` rumi
+enm: enum {
+  v1 = 10, ve = 12,
+}
+```
+
+And it is used like:
+
+```rumi
+a : enm = enm.v1;
+
+if(a == enm.v2){
+   // whatever
+}
+```
 
 # structs and interfaces
 
