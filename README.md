@@ -87,7 +87,7 @@ interfaces can define other methods as well, simliar to structs. The difference 
 Functions' concept types are ommited in the current version, since their value must include their type anyways. One can define a function in place or just define the signature, so that the body could be implemented in another location of the code.
 
 ``` rumi
-fn := (inp1: type1, inp2: type2, inp3: ...type3) -> out_type; // function signature with vardiac input
+fn := (inp1: type1, inp2: type2, inp3: ...type3) -> out_type; // function signature with variadic input
 
 // function in place definition
 fn := () -> void {
@@ -95,7 +95,7 @@ fn := () -> void {
 }
 ```
 
-Vardiac operations are understood for the signature, but are WIP for definition.
+Variadic operations are understood for the signature, but are WIP for definition.
 
 # flow control
 
