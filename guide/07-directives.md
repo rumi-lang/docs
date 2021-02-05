@@ -3,7 +3,7 @@
 Compiler directives are ways for the program to modify the compilers behavior. Through them you can define new parsers, set compiler flags, or run any arbitrary functions. At the moment, we only have the @compile directive, defined the following way:
 
 ```
-@define
+@compile
 directive_name := (c: *Compiler) -> int{
   return 0;
 }
