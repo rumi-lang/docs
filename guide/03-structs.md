@@ -82,3 +82,16 @@ The compiler handles the pointers, so you don't need to worry about them. The po
 * >
 * >=
 ```
+
+## Using Statements
+
+In functions and methods, you can use the statement `using st;`, where st is an instance or a poitner to a struct, to use all of the members of it like a regular variable. This includes assignment and access.
+
+```
+struct_name.reset_id := () -> unit{
+  using self;
+  printf("Reseting id=%d\n", id);
+  id = 0; // this is going to be replaced with self.id
+  return ;
+}
+```
